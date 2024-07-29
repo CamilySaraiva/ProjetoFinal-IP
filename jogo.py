@@ -13,6 +13,9 @@ diretorio_sons = os.path.join(diretorio_principal, 'sons')
 #iniciando pygame
 pygame.init()
 
+#sons
+som_agachar = 
+
 # Criando a tela e suas configurações
 altura_tela = 692
 largura_tela = 1366
