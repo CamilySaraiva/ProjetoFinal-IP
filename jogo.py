@@ -14,7 +14,7 @@ diretorio_sons = os.path.join(diretorio_principal, 'sons')
 pygame.init()
 
 #sons
-som_agachar = 
+som_agachar = pygame.mixer.music.load(diretorio_sons, 'agachar.wav')
 
 # Criando a tela e suas configurações
 altura_tela = 692
@@ -150,6 +150,7 @@ def main():
             keys_pressed = pygame.key.get_pressed()
             if keys_pressed[pygame.K_SPACE]:
                 jogador.pular()
+                som_agachar.play()
 
             if keys_pressed[pygame.K_s]:
                 jogador.agachar()
